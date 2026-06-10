@@ -843,7 +843,7 @@
                     if (checkbox.checked) {
                         total += price * 1;
                         const subsection = item.closest('.subsection');
-                        const sizeLabel = subsection ? subsection.querySelector('.subsection-title) : null;
+                        const sizeLabel = subsection ? subsection.querySelector('.subsection-title') : null;
                         const size = sizeLabel ? `(${sizeLabel.textContent.trim()}) ` : '';
                         selectedItems.push({ name: item.querySelector('.item-name').textContent, size, quantity: 1, price, subtotal: price });
                     }
